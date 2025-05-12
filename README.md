@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lista de Usuários - Next.js + Tailwind CSS
 
-## Getting Started
+Este projeto foi desenvolvido utilizando **Next.js (App Router)** com **TypeScript** e **Tailwind CSS**. A aplicação consome a API pública [JSONPlaceholder](https://jsonplaceholder.typicode.com/users) para exibir uma lista de usuários e seus detalhes.
 
-First, run the development server:
+## Funcionalidades
+
+- Lista de usuários com:
+  - Nome
+  - E-mail
+  - Telefone
+- Campo de pesquisa para filtrar usuários por nome
+- Ao clicar no nome, expande o card para mostrar mais informações do usuário
+  - Nome
+  - Username
+  - E-mail
+  - Telefone
+  - Website
+  - Empresa
+  - Endereço (rua e cidade)
+
+## Tecnologias Utilizadas
+
+- [Next.js 14 (App Router)](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [JSONPlaceholder API](https://jsonplaceholder.typicode.com/)
+
+## Como rodar localmente
 
 ```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/seu-repo.git
+cd seu-repo
+
+# Instale as dependências
+npm install
+
+# Inicie o projeto
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Acesse o app em:
+http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estrutura de Pastas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+src/
+├── api/
+│   └── api.ts           ← Funções para consumir a API de usuários
+├── app/
+│   ├── globals.css      ← Estilos globais da aplicação
+│   ├── layout.tsx       ← Componente de layout
+│   └── page.tsx         ← Página principal (lista de usuários)
+├── components/
+│   ├── SearchInput.tsx  ← Componente de busca
+│   └── UserCard.tsx     ← Componente de card de usuário
+└── lib/
+    └── types.ts         ← Tipos TypeScript para dados de usuários
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Licença
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto é open source e está sob a licença MIT.
