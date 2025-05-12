@@ -29,8 +29,8 @@ Este projeto foi desenvolvido utilizando **Next.js (App Router)** com **TypeScri
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
+git clone https://github.com/jvolive/user-list-app.git
+cd user-list-app
 
 # Instale as dependências
 npm install
